@@ -8,3 +8,7 @@ create table Request_makeup (
     status char(20),
 	PRIMARY KEY(id) 
 );
+
+insert into request_makeup values ( '', 'sadia', 'algorithms','20/12/22','was sick','ok' );
+
+select * from request_makeup;
