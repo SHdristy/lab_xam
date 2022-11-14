@@ -1,0 +1,10 @@
+CREATE DATABASE Makeup_CT_Management
+create table Request_makeup ( 
+	id INT(10) AUTO_INCREMENT, 
+	name char(50), 
+	missed_course char(50),
+    ct_date char(30),
+    reason char(50),
+    status char(20),
+	PRIMARY KEY(id) 
+);
