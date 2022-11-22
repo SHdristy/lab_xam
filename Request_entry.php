@@ -5,6 +5,7 @@
 	$name = $_GET["name"];
 
 	$missed_course = $_GET["missed_course"];
+    
 
 
 
@@ -17,7 +18,7 @@
 
 
 
-	mysqli_query( $connect, "INSERT INTO teacher VALUES ( '', '$id', '$name' , '$missed_course' )" )
+	mysqli_query( $connect, "INSERT INTO request_makeup  VALUES ( '', '$id', '$name' , '$missed_course' )" )
 
 		or die("Can not execute query");
 
@@ -27,6 +28,6 @@
 
 
 
-	echo "<p><a href=read.php>READ all records</a>";
+	echo "<p><a href=index.php>READ all records</a>";
 
 ?>
